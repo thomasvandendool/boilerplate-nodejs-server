@@ -1,0 +1,45 @@
+{
+  "name": "boiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node dist/index.js",
+    "build": "tsc -p .",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@okta/jwt-verifier": "^3.0.1",
+    "@types/cors": "^2.8.13",
+    "@types/pg": "^8.10.2",
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.9.0",
+    "kysely": "^0.26.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.11.2",
+    "zod": "^3.21.4",
+    "zod-error": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/morgan": "^1.9.4",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "eslint": "^8.46.0",
+    "eslint-plugin-jest": "^27.2.3",
+    "jest": "^29.6.2",
+    "nodemon": "^3.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
